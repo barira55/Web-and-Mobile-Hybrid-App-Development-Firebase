@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ass09</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- chp 43-48(EVENTS) -->
+    <!-- 1  -->
+    <a onclick="function1()" href="#">Click Me</a>
+
+    <!-- 2 -->
+    <h3>Mobile Phone Lookup</h3>
+    <img onclick="function2()" src="images/pic1.JPG" alt="">
+    <img onclick="function2()" src="images/pic2.JPG" alt="">
+    <img onclick="function2()" src="images/pic3.JPG" alt="">
+    <img onclick="function2()" src="images/pic4.JPG" alt="">
+
+    <!-- 3 -->
+    <table id="myTable">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Jone</td>
+            <td>10</td>
+            <td><button value="delt" onclick="function3(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe</td>
+            <td>09</td>
+            <td><button value="delt" onclick="function3(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><button value="delt" onclick="function3(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>James</td>
+            <td>08</td>
+            <td><button value="delt" onclick="function3(this)">Delete</button></td>
+        </tr>
+    </table>
+
+    <!-- 4 -->
+    <img width="400px" onmouseover="src ='images/two.jpg'" onmouseout="src ='images/one.png'" src="images/one.png"
+        alt="">
+
+    <!-- 5 -->
+    <h3 id="count">0</h3>
+    <button id="incBtn" onclick="incc()">Increase</button>
+    <button id="decBtn" onclick="dec()">Decrease</button>
+
+
+    <!-- chp 49-52(EVENTS) -->
+    <!-- 1  -->
+    <form action="#">
+        <fieldset>
+            <p>
+                <label>FIRST NAME</label>
+                <input required id="firstname" type="text" name="firstname" size="20" maxlength="30"
+                    placeholder="Enter first name" />
+            </p>
+            <p>
+                <label>LAST NAME</label>
+                <input required id="lastname" type="text" name="lastname" size="20" maxlength="30"
+                    placeholder="Enter last name" />
+            </p>
+            <p>
+                <label>EMAIL ID</label>
+                <input id="email" type="email" name="emailid" size="20" placeholder="Enter email address" />
+            </p>
+            <p>
+                <label>MOBILE NUMBER</label>
+                <input id="mobileno" type="text" name="mobileno" size="20" maxlength="10"
+                    placeholder="Enter mobile number" />
+            </p>
+            <p>
+                <label>GENDER</label>
+                <input id="gender" type="radio" name="gender" value="male" />Male
+                <input id="gender" type="radio" name="gender" value="female" /> Female
+            </p>
+            <p>
+
+                <label class="addresslabel">ADDRESS</label>
+                <textarea id="address" name="address" cols="30" rows="4" class="addressinput"></textarea>
+            </p>
+            <p>
+                <label>CITY</label>
+                <input required id="city" type="text" name="city" size="20" maxlength="30"
+                    placeholder="Enter city name" />
+            </p>
+            <p>
+                <label>COUNTRY</label>
+                <input required id="country" type="text" name="country" size="20" maxlength="30"
+                    placeholder="Enter country" />
+            </p>
+            <a href=""><button onclick="submitt()"> Submit</button></a></li>
+            <button type="reset">Reset</button>
+        </fieldset>
+    </form>
+
+    <!-- 2 -->
+    <!-- <h1>Details Of Product</h1>
+    <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit
+        <a href="javascript:void(0);" onclick="readMore()">Read More
+        </a>
+    </p> -->
+
+    <!-- 3 -->
+
+
+
+
+
+
+
+    <!-- chp 58-67(DOM) -->
+    <div>
+        <h1> DOM </h1>
+        <div id=”form-content” class=”content”>
+            <label for=”first-name”>First Name</label>
+            <input type=”text” id=”first-name” />
+            <label for=”last-name”>Last Name</label>
+            <input type=”text” id=”last-name” />
+            <label for=”email”>Email</label>
+            <input type=”text” id=”email” />
+        </div>
+        <div id=”main-content” class=”content”>
+            <p class=”render”> First Name : Alex</p>
+            <p class=”render” id=”lastName”>Last Name: Bank</p>
+            <p class=”render”> Email : alexbank@example.com</p>
+            <p class=”render”> Country : Pakistan </p>
+            <p class=”render”> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>

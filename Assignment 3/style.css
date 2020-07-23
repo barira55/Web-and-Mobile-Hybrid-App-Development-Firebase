@@ -1,0 +1,346 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
+i{
+  color: white;
+  font-size:24px;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  display: inline-block;
+  margin: 0px 5px 0px 5px;
+  padding: 0px 5px 0px 5px;
+}
+
+.stepone{
+  background-color: royalblue;
+  height:50px ;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+.icons{
+  padding: 0px 5px 0px 5px;
+  margin: 0px 5px 0px 5px;
+    width: 300px;
+   
+    display: inline-block;
+    text-align: left;
+}
+
+.buttons{
+  padding: 0px 5px 0px 5px;
+  margin: 0px 5px 0px 5px;
+  width: 350px;
+   
+    display: inline-block;
+    text-align: right;
+
+}
+
+ .quote {
+  padding: 0px 5px 0px 5px;
+  margin: 0px 5px 0px 5px;
+ 
+    width: 610px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+  
+  
+}
+.ukdonar, .donatenow, .smitresult{
+  padding: 0px 1px 0px 1px;
+  margin: 0px 1px 0px 1px;
+  height: 30px;
+  font-size: 14px;
+}
+
+/* STEP TWO */
+.steptwo{
+  margin: 0;
+  height: 4em;
+  padding: 5px 5px 5px 5px;
+
+
+}
+.twologo{
+  position: absolute;
+  left: 50px;
+}
+
+.twomenus{
+position: absolute;
+right: 60px;
+margin: 5px 5px 5px 5px;
+padding: 5px 5px 5px 5px;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  padding: 1px 1px 1px 1px;
+  font-size: 13px;
+  border: none;
+  border-radius: 25px;
+  width: 100px;
+  height: 30px;
+}
+
+.twobtn{
+  position: relative;
+  display: inline-block;
+}
+
+.list {
+  font-size: 12px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.list a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.list a:hover {
+  background-color: royalblue;
+}
+
+.twobtn:hover .list {
+  display: block;
+}
+
+.twobtn:hover .btn {
+  background-color: royalblue;
+}
+
+/* STEP THREE */
+
+/* STEP FOUR */
+.stepfour{
+  margin-top: 12px auto 12px auto;
+  background-color: royalblue;
+  color: white;
+  height: 20px;
+  text-align: center;
+  padding: 2px auto 2px auto;
+ 
+}
+
+/* STEP FIVE */
+
+.introduction{
+  text-align: center;
+  font-size: 35px;
+font-family: 'Times New Roman', Times, serif;
+padding-top: 50px;
+margin: 0;
+
+}
+.intro{
+  color: royalblue;
+  line-height: 1px;
+}
+
+.duction{
+  color: green;
+  font-weight: 600px;
+}
+
+.fiveimg{
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.introductionpara{
+  text-align: justify;
+  width: 950px;
+  margin: 5px auto 5px auto;
+}
+
+/* STEP SIX */
+
+.stepsix{
+  margin: 10px auto 10px auto;
+  padding:10px auto 10px auto ;
+  height: 300px;
+  background-color: royalblue;
+  text-align: center;
+}
+
+.dfme{
+  text-align: center;
+  display: inline-block;
+  padding: 20px 10px 10px 10px;
+  margin: 30px 10px 10px 10px;
+}
+
+.icon{
+  width: 50px;
+}
+
+.iconnos{
+  color: white;
+  font-size: 40px;
+}
+
+.iconheading{
+  color: white;
+  font-size: 20px;
+}
+
+.monthly{
+  color: lawngreen;
+}
+
+/* STEP SEVEN */
+.sevenicons{
+  text-align: center;
+  
+}
+.sevenbtn{
+  text-align: center;
+  width: 350px;
+  height: 150px;
+  margin: 20px 10px 20px 10px;
+  padding: 20px 10px 20px 10px;
+  border: none;
+  box-shadow: silver;
+  
+}
+.sevenheadings{
+  text-decoration: none;
+  color: royalblue;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+/* STEP EIGHT */
+.stepeight{
+  height: 300px;
+  padding: 20px 10px 20px 10px;
+  margin: 60px 10px 20px 10px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+}
+
+.missionandupcomingprojects{
+  margin-left: 70px;
+  padding: 10px 10px 10px 10px;
+  width: 700px;
+  text-align: center;
+}
+
+.eightmainheading{
+  text-align: left;
+  color: royalblue;
+  font-size: 30px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+}
+
+.eightbtn{
+  text-align: left;
+  width: 300px;
+  height: 60px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  box-shadow: silver;
+  display: inline-block;
+}
+
+.eighticon{
+  padding-right: 30px;
+}
+
+.eightheading{
+  text-decoration: none;
+  color: royalblue;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.upcomingevents{
+  
+  padding: 10px 10px 10px 40px;
+  margin-left: 40px;
+  width: 400px;
+  text-align: left;
+}
+
+.eightpara{
+  font-size: 12px;
+  text-align: left;
+  text-align: justify;
+  padding: 10px 10px 10px 10px;
+}
+
+/* STEP NINE */
+
+.nineimg{
+  padding: 30px 10px 50px 10px;
+  margin: 30px 10px 50px 10px ;
+  text-align: center;
+}
+
+/* STEP TEN */
+
+.stepten{
+  background-color: #25272e;
+  height: 350px;
+  color: #bbb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+.tenone, .tentwo, .tenthree{
+  padding: 30px 20px 30px 20px;
+  margin: 30px 20px 30px 20px;
+  width: 350px;
+}
+
+.tenheading1{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.tenemail{
+  text-decoration: none;
+color: #bbb;;
+}
+
+.tennumber{
+  padding: 2px 2px 2px 2px;
+  margin: 2px 2px 2px 2px;
+}
+/* STEP ELEVEN */
+
+.stepeleven{
+  background-color: royalblue;
+  margin: 0;
+  height: 30px;
+  color: white;
+  padding-top: 6px;
+  padding-left: 100px;
+  font-size: 12px;
+}

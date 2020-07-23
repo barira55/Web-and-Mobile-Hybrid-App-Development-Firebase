@@ -1,0 +1,259 @@
+body{
+    background-color: #951556;
+}
+
+.navbar, .nav-link, .navbar-brand, .nav-pills{
+  background-color: #951556 !important;
+  color: #E9B5D2 !important;
+} 
+
+.navbar-toggler{
+  background-color: #E9B5D2 !important;
+  color: #951556 !important;
+}
+.btn{
+    background-color: #951556 !important;
+  border: none;
+  color: #E9B5D2;
+  
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+ 
+}
+.btn:hover{
+    background-color: black !important;
+    color: white !important;
+
+   
+}
+.col:hover{
+    transform: scale(1.1);
+}
+
+.card{
+    background-color: #E9B5D2;
+    
+}
+
+.heading{
+    color: #E9B5D2;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-link{
+    font-size: 18px;
+}
+
+.fa-user, .fa-shopping-cart, .fa-heart{
+    font-size: 25px;
+}
+.fa-chevron-right, .fa-chevron-left{
+    font-size: 82px !important;
+}
+.card-link-text{
+    text-decoration: none !important;
+    color: #951556;
+    
+}
+.card-link-text:hover{
+    color: black;
+}
+
+
+
+/* 
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 10px;
+    border-top: 5px solid white;
+  } */
+
+
+
+
+.view-all-text{
+    text-decoration: underline ;
+    color: #E9B5D2;
+  
+}
+
+.hello{
+    display: flex;
+    overflow-x: auto;
+}
+.footer{
+    background-color: #25272e;
+    color: #bbb;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+flex-wrap: wrap;
+}
+
+
+.stepeleven{
+    background-color: #951556;
+    margin: 0;
+    color: #E9B5D2;
+    font-size: 18px;
+  }
+
+
+
+.d-flex > div > li {
+    list-style-position: outside !important;
+list-style-type: none;
+}
+.d-flex > div > li > a {
+    color: #bbb !important;
+    text-decoration: none;
+}
+.d-flex > div > ul > li > a {
+    color: #bbb !important;
+    
+}
+
+
+
+
+
+
+/* for biscuits */
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .row .active.col-md-4.col + .col + .col + .col {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .row .active.col-sm-6.col + .col + .col {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) {
+    .col {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .row .active + .col {
+        display: block;
+    }
+    .row .col.active:not(.col-right):not(.col-left),
+    .row .col.active:not(.col-right):not(.col-left) + .col {
+        transition: none;
+    }
+    .row .col-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.col-left + .col-next.col-left,
+    .col-next.col-left + .col,
+    .col-next.col-left + .col + .col {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .row .col-prev.col-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.col-right + .col-prev.col-right,
+    .col-prev.col-right + .col,
+    .col-prev.col-right + .col + .col {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .row .active + .col + .col {
+        display: block;
+    }
+    .row .col.active:not(.col-right):not(.col-left) + .col + .col {
+        transition: none;
+    }
+    .row .col-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .col-next.col-left + .col + .col + .col {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .col-prev.col-right + .col + .col + .col {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .row .active + .col + .col + .col {
+        display: block;
+    }
+    .row .col.active:not(.col-right):not(.col-left) + .col + .col + .col {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .row .active.col-lg-3.col + .col + .col + .col + .col {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .col-next.col-left + .col + .col + .col + .col {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .col-prev.col-right + .col + .col + .col + .col {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
